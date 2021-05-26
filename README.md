@@ -1,6 +1,7 @@
-# starting-with-nodejs
+# Starting With Nodejs
 
 ## RESUMEN
+
 Noje JS es la forma más rápida de ejecutar código y escalable, corre en servidores.
 Es un lenguaje.
 
@@ -12,8 +13,8 @@ Puedo ejecutarlo para herrameintas, transpialdores, scraping, automatización.No
 ### Caracterisitcas
 
 - JS es concurrente; Monohilo, entradas y salidas asincronas.
-Un unico proceso corrriendo en el nucleo del procesador.
-No se queda bloqueante.
+  Un unico proceso corrriendo en el nucleo del procesador.
+  No se queda bloqueante.
 
 - NodeJS usa V8 como entorno de ejecución fue creado por google escrito en c++ convierte JS en código máquina en lugar de interpretarlo en tiempo real.
 
@@ -27,7 +28,11 @@ No se queda bloqueante.
 
 Node está orientado a eventos. Un bucle de eventos que nos permite se programar de manera reactiva. Cualquier evento se puede escuchar.
 
-## Fundamentos en NODEJS
+# Event Lopp
+
+![](recursos/event-loop.png)
+
+# Fundamentos en NODEJS
 
 PROCESO DE NODE
 
@@ -50,7 +55,7 @@ RESUMEN:
 ### Desarrollo
 
 - Nodemon. Demons en linux, puedes tener procesos que ves ejecutandose
-nodemon + archivo al que quiero acceder detecta cambios, y ejecuta automaticamente el código.
+  nodemon + archivo al que quiero acceder detecta cambios, y ejecuta automaticamente el código.
 
 ```bash
 sudo npm install -g nodemon
@@ -59,13 +64,14 @@ sudo npm install -g nodemon
 ## Producción
 
 ### PM2
+
 ```bash
 sudo npm install -g pm2
 ```
+
 - PM2 Es un demonio administrador de procesos que me puede ayudar a administrar y mantener mi aplicación 24/7.
 
 - Voy a poner monitorizar el código para saber si algo se rompe.
-Me permite ver dashboards de mi código, puedo ver que está corriendo.
+  Me permite ver dashboards de mi código, puedo ver que está corriendo.
 - Puedo ver el rendimiento de mi cpu
-Con: pm2 stop + id —> me detiene el proceso que está en ejecución con ese ID.
-
+  Con: pm2 stop + id —> me detiene el proceso que está en ejecución con ese ID.
